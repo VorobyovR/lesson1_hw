@@ -23,22 +23,40 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
-Console.Write("Input first number: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input second number: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input third number: ");
-int number3 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input first number: ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input second number: ");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input third number: ");
+// int number3 = Convert.ToInt32(Console.ReadLine());
 
-if (number1 > number2)
+// if (number1 > number2)
+// {
+//     if (number1 > number3)
+//     Console.WriteLine(number1 + ", " + number2 + ", " + number3 + " -> " + number1);
+// }
+// else
+// {
+//     if (number2 > number3)
+//     Console.WriteLine(number1 + ", " + number2 + ", " + number3 + " -> " + number2);
+//     else
+//     Console.WriteLine(number1 + ", " + number2 + ", " + number3 + " -> " + number3);
+// }
+
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+
+Console.Write("Input number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number % 2 == 0)
 {
-    if (number1 > number3)
-    Console.WriteLine(number1 + ", " + number2 + ", " + number3 + " -> " + number1);
+    Console.WriteLine(number + " -> " + "Yes");
 }
 else
 {
-    if (number2 > number3)
-    Console.WriteLine(number1 + ", " + number2 + ", " + number3 + " -> " + number2);
-    else
-    Console.WriteLine(number1 + ", " + number2 + ", " + number3 + " -> " + number3);
+    Console.WriteLine(number + " -> " + "No");
 }
