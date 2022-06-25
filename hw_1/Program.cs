@@ -49,14 +49,33 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.Write("Input number: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-if (number % 2 == 0)
+// if (number % 2 == 0)
+// {
+//     Console.WriteLine(number + " -> " + "Yes");
+// }
+// else
+// {
+//     Console.WriteLine(number + " -> " + "No");
+// }
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.Write("Input number: ");
+int numberFin = Convert.ToInt32(Console.ReadLine());
+int numberStart = 1;
+
+while (numberStart < numberFin)
 {
-    Console.WriteLine(number + " -> " + "Yes");
+    if (numberStart % 2 == 0)
+    {
+        Console.WriteLine(numberStart);
+    }
+    numberStart ++;
 }
-else
-{
-    Console.WriteLine(number + " -> " + "No");
-}
+
