@@ -38,10 +38,6 @@
 // 82 -> 10
 // 9012 -> 12
 
-// Console.Write("Input number N: ");
-// int numberN = int.Parse(Console.ReadLine());
-// int numberNres = 0;
-
 // int numberSum(int numberN)
 
 // {
