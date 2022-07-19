@@ -80,36 +80,7 @@ Console.ReadKey();
 // 5 9 2 3
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-/*
-Console.Clear();
-Console.Write("Введите количество строк массива M: ");
-int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите количество столбцов массива N: ");
-int columns = Convert.ToInt32(Console.ReadLine());
 
-int[,] resultArray = new int[rows, columns];
-Random random = new Random();
-Console.Write($"M = {rows}, N = {columns}");
-Console.WriteLine();
-
-for (int i = 0; i < resultArray.GetLength(0); i++)
-{
-    // double avrNumCol = 0;
-    for (int j = 0; j < resultArray.GetLength(1); j++)
-    {
-        resultArray[i, j] = random.Next(0, 10);
-
-        // Console.WriteLine("{0,3}", resultArray[i, j]);
-
-        // avrNumCol = avrNumCol + resultArray[j, i];
-    }
-    // avrNumCol = avrNumCol / columns;
-    // Console.Write(" -> Cредне-арифметическое значение элементов в столбце = " + avrNumCol);
-    // Console.WriteLine(  );
-    Console.WriteLine("{0,3}", resultArray[i, j]);
-}
-Console.ReadKey();
-*/
 Console.Clear();
 
 int[,] GetNewArray(int m, int n, int minValue, int maxValue)
